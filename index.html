@@ -5,62 +5,132 @@
     <meta name="description" content="My Portfolio Page with a short bio and an array of projects to showcase my skills.">
     <meta name="keywords" content="background, portfolio, contact">
     <meta name="author" content="James Huff">
+    <meta charset="UTF-8" lang="en">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>-->
   </head>
   <body>
     <header>
-      <meta charset="UTF-8" lang="en">
-      <link rel="stylesheet" href="styles.css">
-      <script src="script.js"></script>
       <title>James Huff Portfolio</title>
-      <nav>
-        <h1>JAMES HUFF</h1>
-        <p>WEB DEVELOPER</p>
-        <a>BACKGROUND</a>
-        <a>PORTFOLIO</a>
-        <a>CONTACT ME</a>
+      <nav id="nav">
+		    <img src="https://i.ibb.co/2hpxH6c/menow.jpg" alt="A photo of James.">
+			  <div id="myName">
+         <h1>JAMES HUFF</h1>
+         <p>WEB DEVELOPER</p>
+			  </div>
+        <a href="#" onclick="showSection('bio')">BACKGROUND</a>
+        <a href="#" onclick="showSection('portfolio')">PORTFOLIO</a>
+        <a href="#" onclick="showSection('contact-me')">CONTACT ME</a>
       </nav>
     </header>
     <section id="bio">
       <div id="intro">
-        <h2>Background:</h2>
-        <p>Motivated and dedicated web development enthusiast with a strong foundation in HTML5, CSS3, SCSS, SASS, and JavaScript. Currently seeking an entry-level or internship position to gain practical experience in the industry.</p>
-        <p>Familiar with JavaScript frameworks and libraries such as jQuery, d3, and React, and eager to further enhance skills in web development. </p>
-        <p>Basic knowledge of design tools like Figma and Photoshop, as well as version control using Git. Currently in the process of learning PostgreSQL, BASH, and SQL.</p>
+        <h2 id="background">Background:</h2>
+			  <div id="intro-paragraphs">
+          <p>I am a motivated and dedicated web development enthusiast with a strong foundation in HTML5, CSS3, SCSS, SASS, and JavaScript.</p>
+				  <p>Currently seeking an entry-level or internship position to gain practical experience in the industry.</p>
+          <p>I am familiar with JavaScript frameworks and libraries such as jQuery, d3, and React. I also have basic knowledge of design tools like Figma and Photoshop.</p>
+          <p> I am eager to further enhance my skills in web development to develop full stack applications, possibly with more of a focus on backend technologies as I am finding SQL and BASH scripting to be enjoyable.</p>
+				  <p>In pursuit of that greater knowledge I am currently in the process of learning PostgreSQL, BASH, SQL and Github for version control.</p>
+			  </div>
+			  <div id="list-container"> <!-- Certs -->
+          <ul> <!-- Front-End Certs-->
+				    <h3>Front-End Certifications</h3>
+					  <li><a href="https://www.freecodecamp.org/certification/jhuff95/responsive-web-design">Responsive Web Design - freeCodeCamp</a></li> <!-- Responsive Web Design --> 
+            <li><a href="https://www.freecodecamp.org/certification/jhuff95/javascript-algorithms-and-data-structures">Javascript Algorithms & Data Structures - freeCodeCamp</a></li> <!-- Javascript -->
+					  <li><a href="https://www.freecodecamp.org/certification/jhuff95/front-end-development-libraries">Front-End Libriaries Certification - freeCodeCamp</a></li> <!-- JS Libraries -->
+			    </ul> 
+				  <ul> <!-- Back-End Certs-->
+				    <h3>Back-End Certifications</h3>
+					  <li><a href="https://i.ibb.co/1T4NWQw/sololearn-python.jpg">Python Fundamentals - Sololearn</li> <!-- Python -->
+				    <li><a href="https://i.ibb.co/WBZMdm0/php-sololearn.jpg">PHP Fundamentals - Sololearn</a></li> <!-- PHP -->
+          </ul> 
+			  </div> 
       </div>
       <div id="skills-container">
-       <h2>Current skills:</h2>
-       <h3>Technical Skills:</h3>
-       <ul>
-        <li>Proficient in HTML5, CSS3, SCSS, SASS, and JavaScript.</li>
-        <li>Familiarity with JavaScript frameworks and libraries, including jQuery, d3, and React.</li>
-        <li>Basic understanding of design tools like Figma and Photoshop for UI design.</li>
-        <li>Knowledge of version control using Git.</li>
-       </ul>
-       <h3>Web Development:</h3>
-       <ul>
-        <li>Able to create responsive web pages using HTML5 and CSS3.</li>
-        <li>Basic understanding of SCSS and SASS for clean and maintainable CSS code.</li>
-        <li>Familiarity with JavaScript for implementing interactive functionality on web applications.</li>
-        <li>Basic knowledge of jQuery for DOM manipulation and handling AJAX requests.</li>
-        <li>Exposure to React for building user interfaces with components and basic state management.</li>
-       </ul>
-       <h3>Design and Collaboration:</h3>
-       <ul>
-        <li>Familiarity with Figma and Photoshop for designing and prototyping user interfaces.</li>
-        <li>Basic understanding of collaboration through Git, enabling code integration and version control.</li>
-       </ul>
-       <h3>Certifications:</h3>
-       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-       </ul>
+		    <div>
+          <h3 id="technical-skills">General Technical Skills:</h3>
+          <ul>
+            <li>Proficient in HTML5, CSS3, SCSS, SASS, and JavaScript.</li>
+            <li>Familiarity with JavaScript frameworks and libraries, including jQuery, d3, and React.</li>
+            <li>Basic understanding of design tools like Figma and Photoshop for UI design.</li>
+            <li>Knowledge of version control using Github.</li>
+          </ul>
+			  </div>  <!--Technical skills-->
+			  <div> <!--Web Dev skills-->
+          <h3 id="web-skills">Web Development Skills:</h3>
+          <ul>
+            <li>Able to create responsive web pages using HTML5 and CSS3.</li>
+            <li>Basic understanding of SCSS and SASS for clean and maintainable CSS code.</li>
+            <li>Familiarity with JavaScript for implementing interactive functionality on web applications.</li>
+            <li>Basic knowledge of jQuery for DOM manipulation and exposure to handling AJAX requests.</li>
+            <li>Exposure to React for building user interfaces with components and basic state management.</li>
+          </ul>
+			  </div>  
+			  <div>
+          <h3 id="design_collab-skills">Design & Collab. Skills:</h3>
+          <ul>
+            <li>Familiarity with Figma and Photoshop for designing and prototyping user interfaces.</li>
+            <li>Currently attaining a basic understanding of collaboration through Git, enabling code integration and version control.</li>
+          </ul>
+		    </div>  <!--Design & Collab skills-->
       </div>
     </section>
-    <section id="portfolio"></section>
-    <section id="contact-me"></section>
+    <section id="portfolio">
+	    <h2 style="text-align: center">Portfolio</h2>
+		  <p>These are only some of my works. The rest can be found on my <a href="https://codepen.io/jhuff95">CodePen</a> as I am currently learning version control.</p>
+		  <div id="container">
+		    <div class="project-description">
+			    <h3></h3>
+			    <p></p>
+			  </div>
+			  <div id="test">
+			    <i id="prev-button" class="fa fa-chevron-left" onclick="previousImage()"></i>
+				  <div id="thumbnail-container">
+				    <a href="https://codepen.io/jhuff95/pen/zYmgvpB"><img id="image1" alt="chowCabby" class="thumbnail" src="https://i.ibb.co/GsyjV30/Untitled-8.png"></a>
+					  <a href="https://codepen.io/jhuff95/pen/RwezBVM"><img id="image2" alt="magic8ball" class="thumbnail" src="https://i.ibb.co/Qdsm3ML/Untitled.png"></a>
+					  <a href="https://codepen.io/jhuff95/pen/PoygZem"><img id="image3" class="thumbnail" alt="shopGuru" src="https://i.ibb.co/xmMDCgZ/Screenshot-2023-06-03-8-22-33-PM.png"></a>
+				  </div>
+				  <i id="next-button" class="fa fa-chevron-right" onclick="nextImage()"></i>
+			  </div> 
+			  <figcaption style="text-align: center">Coded By: James Huff</figcaption>
+	    </div>
+    </section>
+    <section id="contact-me">
+	    <h2>Send Me A Message:</h2>
+		  <div id="icon-container">
+		    <div>
+			    <i id="linkedin" class="fa-brands fa-linkedin icon"></i>
+				  <p><a href="https://www.linkedin.com/in/jameshuff95/">LinkedIn</a></p>
+		    </div>
+			  <div>
+			    <i id="github" class="fa-brands fa-github icon"></i>
+			    <p><a href="https://github.com/Jameshuff95">Github</a></p>
+			  </div>
+			  <div>
+			    <i id="codepen" class="fab fa-codepen icon"></i>
+				  <p><a href="https://codepen.io/jhuff95">CodePen</a></p>
+		    </div>
+		  </div>
+		  <p style="text-align: center">or fill out the form below:</p>
+      <form action="/submit-form" method="post">
+		    <label for="name">Name: </label>
+			  <input id="name" name="name" type="text" required></input>
+			  <label for="reason">Reason for contact: </label>
+			  <select id="reason" required>
+			    <option>--Select An Option--</option>
+				  <option>I have a question</option>
+				  <option>I am interested in partnering</option>
+				  <option>Other</option>
+		    </select>
+			  <label for="message">Your Message: </label>
+	      <input id="message" type="text" required></input>
+	      <input id="send" type="submit" onclick="submitAlert()"></input>
+      </form>
+    </section>
   </body>
   <footer>
-    <p></p>
+    <p>Thank you for visiting my page!</p>
+	  <a href="#nav">Return to Top</a>
   </footer>
 </html>
