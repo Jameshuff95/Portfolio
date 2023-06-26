@@ -335,11 +335,13 @@ figcaption {
   outline: none;
   border: none;
   margin: 2% 0;
+  height: 5vw;
 }
 
 #contact-me option {
   color: #000;
   cursor: pointer;
+  height: 5vw;
 }
 
 #send {
