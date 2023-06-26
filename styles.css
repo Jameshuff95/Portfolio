@@ -9,7 +9,7 @@
 
 @keyframes slide {
   0% {
-    transform: translateX(300px) translateY(0) rotate(360deg); /* Starting position */
+    transform: translateX(300px) translateY(0) rotate(1080deg); /* Starting position */
   }
   100% {
     transform: translateX(0) translateY(0) rotate(); /* Ending position */
