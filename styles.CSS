@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@300&display=swap');
+
+
+
+
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(300px) translateY(0) rotate(360deg); /* Starting position */
+  }
+  100% {
+    transform: translateX(0) translateY(0) rotate(); /* Ending position */
+  }
+}
+
+@keyframes slide_2 {
+  0% {
+    transform: translateX(300px) translateY(0); /* Starting position */
+  }
+  100% {
+    transform: translateX(0) translateY(0) rotate(); /* Ending position */
+  }
+}
+
+
+
+
+
+
+
+* {
+  color: #fff;
+  font-family: Roboto;
+}
+
+body {
+  background-image: linear-gradient(85deg, #000, #333);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  animation-name: slide_2;
+  animation-duration: 2s; /* Duration of the animation */
+  animation-iteration-count: 1; /* Repeat the animation indefinitely */
+}
+
+nav img {
+  width: 20vw;
+  margin: 1%;
+  border: 5px dashed #123;
+  outline: 3px solid rgba(255,255,255,0.1);
+  border-radius: 4vw 7vw 3vw;
+  box-shadow: 0 0 3vw #fff;
+  transform: translate(-4px, -5px) rotate(1deg);
+}
+
+#myName {
+  text-align: center;
+  animation-name: slide; /* Use the defined keyframes */
+  animation-duration: 2s; /* Duration of the animation */
+  animation-iteration-count: 1; /* Repeat the animation indefinitely */
+}
+
+nav h1 {
+  font-size: 3vw;
+}
+
+nav p {
+  font-size: 2vw;
+}
+
+nav a {
+  cursor: pointer;
+  font-size: 1.35vw;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  box-shadow: 0 0 2vw black;
+  border-radius: 50%;
+  background-color: #123;
+}
+
+nav a:active {
+  color: lightblue;
+}
+
+
+
+
+
+
+
+
+
+#list-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+#list-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2%;
+}
+
+#list-container ul, #skills-container ul {
+  margin: 2%;
+  padding: 2%;
+}
+
+#bio {
+  padding: 2%;
+  font-size: 2vw;
+  text-align: center;
+}
+
+#bio h2, h3 {
+  text-align: center;
+}
+
+#bio h2 {
+  font-size: 3vw;
+}
+
+#bio h3 {
+  font-size: 2.5vw;
+}
+
+#intro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#intro h3 {
+  margin-top: .5vw;
+}
+
+#bio ul {
+  list-style-type: none;
+}
+
+#bio li {
+  margin: 10px 0;
+}
+
+#bio a {
+  text-decoration: none;
+}
+
+#bio a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transform: scaleX(1.1) scaleY(1.1);
+}
+
+#skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#skills-container ul {
+  text-align: center;
+}
+
+#skill-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 200%;
+  font-size: 5vw;
+}
+
+.skill-icon {
+  padding: 5%;
+}
+
+#htmlIcon {
+  color: #E34F26;
+}
+
+#cssIcon {
+  color: #1572B6;
+}
+
+#fontawesomeIcon {
+  color: skyblue;
+}
+
+#figmaIcon {
+  color: #F24E1E;
+}
+
+#sassIcon {
+  color: #CC6699;
+}
+
+#bootstrapIcon {
+  color: #563D7C;
+}
+
+#jsIcon {
+  color: #F7DF1E;
+}
+
+#reactIcon {
+  color: skyblue;
+}
+
+#phpIcon {
+  color: #777BB4;
+}
+
+#pythonIcon {
+  color: skyblue;
+}
+
+#bashIcon: {
+  color: white;
+}
+
+#databaseIcon {
+  color: red;
+}
+
+
+
+
+
+
+
+
+#portfolio {
+  font-size: 2vw;
+}
+
+.project-description {
+  padding: 2%;
+  height: 100px;
+}
+
+#test {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1%;
+}
+
+#test i {
+  font-size: 8vw;
+  cursor: pointer;
+}
+
+.thumbnail {
+  cursor: pointer;
+  width: 75vw;
+  height: 50vw;
+}
+
+figcaption {
+  margin-top: 3vw;
+  font-size: 1.5vw;
+}
+
+
+
+
+
+
+
+
+
+#contact-me {
+  padding: 3%;
+  font-size: 2vw;
+}
+
+#contact-me h2 {
+  text-align: center;
+}
+
+#icon-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+}
+
+#icon-container div {
+  text-align: center;
+}
+
+#icon-container a {
+  font-size: 2vw;
+  text-decoration: none;
+}
+
+.icon {
+  cursor: pointer;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  font-size: 5vw;
+}
+
+#linkedin {
+  color: #0077b5;
+}
+
+#github {
+  color: #A020F0;
+}
+
+#codepen {
+  color: yellow;
+}
+
+#contact-me form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-me input, select {
+  color: #000;
+  outline: none;
+  border: none;
+  margin: 2% 0;
+}
+
+#contact-me option {
+  color: #000;
+  cursor: pointer;
+}
+
+#send {
+  width: 50%;
+  cursor: pointer;
+  align-self: center;
+  height: 6vw;
+}
+
+footer {
+  text-align: center;
+}
