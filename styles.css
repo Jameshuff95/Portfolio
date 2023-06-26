@@ -245,7 +245,7 @@ nav a:active {
 
 .project-description {
   padding: 2%;
-  height: 4vw;
+  height: 300px;
 }
 
 #test {
@@ -262,8 +262,8 @@ nav a:active {
 
 .thumbnail {
   cursor: pointer;
-  width: 75vw;
-  height: 50vw;
+  width: 50vw;
+  height: 25vw;
 }
 
 figcaption {
