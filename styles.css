@@ -336,12 +336,14 @@ figcaption {
   border: none;
   margin: 2% 0;
   height: 5vw;
+  font-size: 3vw;
 }
 
 #contact-me option {
   color: #000;
   cursor: pointer;
   height: 5vw;
+  font-size: 3vw;
 }
 
 #send {
@@ -349,8 +351,10 @@ figcaption {
   cursor: pointer;
   align-self: center;
   height: 6vw;
+  font-size: 3vw;
 }
 
 footer {
   text-align: center;
+  font-size: 3vw;
 }
