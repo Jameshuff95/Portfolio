@@ -263,8 +263,8 @@ nav a:active {
 
 .thumbnail {
   cursor: pointer;
-  width: 50vw;
-  height: 25vw;
+  width: 75vw;
+  height: 50vw;
 }
 
 figcaption {
