@@ -100,24 +100,19 @@ nav a:active {
 
 
 
-
-
-#list-container {
+#intro {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
-/* #list-container div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 2%;
-} */
-
-#list-container ul, #skills-container ul {
-  margin: 2%;
-  padding: 2%;
+#intro h3 {
+  margin-top: .5vw;
 }
+
+
+
+
+
 
 #bio {
   padding: 2%;
@@ -137,15 +132,6 @@ nav a:active {
   font-size: 2.5vw;
 }
 
-#intro {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-#intro h3 {
-  margin-top: .5vw;
-}
-
 #bio ul {
   list-style-type: none;
 }
@@ -154,13 +140,27 @@ nav a:active {
   margin: 10px 0;
 }
 
-#bio a {
-  text-decoration: none;
+
+
+
+
+
+
+
+
+
+#list-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  border: 1px solid red;
 }
 
-#bio a:hover {
-  text-decoration: underline;
-  cursor: pointer;
+#list-container ul, #skills-container ul {
+  margin: 2%;
+  padding: 2%;
+}
+
+.skill-icon:hover {
   transform: scaleX(1.1) scaleY(1.1);
 }
 
@@ -169,8 +169,19 @@ nav a:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  border: 1px solid red;
 }
-  
+
+
+
+
+
+
+
+
+
+
+
 #skills-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -178,17 +189,6 @@ nav a:active {
 
 #skills-container ul {
   text-align: center;
-}
-
-#skill-icons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 200%;
-  font-size: 3vw;
-}
-
-.skill-icon {
-  padding: 2%;
 }
 
 #htmlIcon {
@@ -238,6 +238,12 @@ nav a:active {
 #databaseIcon {
   color: red;
 }
+
+
+
+
+
+
 
 
 
