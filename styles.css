@@ -165,10 +165,9 @@ nav a:active {
 }
 
 .skill-icons-container {
-  border: 1px solid white;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  font-size: 3vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
   
 #skills-container {
