@@ -107,12 +107,12 @@ nav a:active {
   grid-template-rows: repeat(2, 1fr);
 }
 
-#list-container div {
+/* #list-container div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 2%;
-}
+} */
 
 #list-container ul, #skills-container ul {
   margin: 2%;
