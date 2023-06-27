@@ -228,14 +228,14 @@ nav a:active {
 }
 
 #pythonIcon {
-  color: skyblue;
+  color: yellow;
 }
 
 #bashIcon {
   color: white;
 }
 
-#postgres-icon {
+#postgresIcon {
   color: #0064a5;
 }
 
