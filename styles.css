@@ -166,7 +166,8 @@ nav a:active {
 
 .skill-icons-container {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
   
 #skills-container {
