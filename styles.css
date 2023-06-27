@@ -166,8 +166,9 @@ nav a:active {
 
 .skill-icons-container {
   font-size: 3vw;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
   
 #skills-container {
