@@ -152,16 +152,11 @@ nav a:active {
 #list-container {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  border: 1px solid red;
 }
 
 #list-container ul, #skills-container ul {
   margin: 2%;
   padding: 2%;
-}
-
-.skill-icon:hover {
-  transform: scaleX(1.1) scaleY(1.1);
 }
 
 .skill-icons-container {
@@ -171,7 +166,13 @@ nav a:active {
   border: 1px solid red;
 }
 
+.skill-icon {
+  margin: 0 1vw;
+}
 
+.skill-icon:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+}
 
 
 
