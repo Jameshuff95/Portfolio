@@ -165,6 +165,7 @@ nav a:active {
 }
 
 .skill-icons-container {
+  border: 1px solid white;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
