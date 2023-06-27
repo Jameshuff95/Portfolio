@@ -235,6 +235,10 @@ nav a:active {
   color: white;
 }
 
+#postgres-icon {
+  color: #0064a5;
+}
+
 #databaseIcon {
   color: #00758F;
 }
