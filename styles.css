@@ -9,7 +9,7 @@
 
 @keyframes slide {
   0% {
-    transform: translateX(300px) translateY(0) rotate(1080deg); /* Starting position */
+    transform: translateX(300px) translateY(0) rotate(540deg); /* Starting position */
   }
   100% {
     transform: translateX(0) translateY(0) rotate(); /* Ending position */
@@ -163,11 +163,10 @@ nav a:active {
   font-size: 3vw;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border: 1px solid red;
 }
 
 .skill-icon {
-  margin: 0 1vw;
+  margin: .5vw 1vw;
 }
 
 .skill-icon:hover {
