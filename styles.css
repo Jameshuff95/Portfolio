@@ -164,6 +164,11 @@ nav a:active {
   transform: scaleX(1.1) scaleY(1.1);
 }
 
+.skill-icons-container {
+  display: flex;
+  align-items: center;
+}
+  
 #skills-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
