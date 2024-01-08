@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A portfolio about James.">
+    <meta name="keywords" content=", James_Huff, HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div id="leftHeader">
+            <p id="name">James Huff</p>
+            <p id="wordChanger"></p>
+        </div>
+        <div id="rightHeader">
+            <div id="outerSwitch">
+                <div id="switchBackground"></div>
+                <div id="innerSwitch"></div>
+            </div>
+            <div>
+                <p id="menuButton">=</p>
+                <div id="menu">
+                    <p id="closeMenu">X</p>
+                    <div id="menuItemsContainer">
+                        <div id="aboutMeLink" class="menuItem">About Me</div>
+                        <div id="projectsLink" class="menuItem">My Projects</div>
+                        <!--Need a better Image for Resume Below!-->
+                        <!--Fix this tonight!-->
+                        <div class="menuItem"><a id="downloadResume" href="https://i.ibb.co/dQHvL2Y/Resume-pdf.jpg" download="James_Huff_Resume">Download Resume</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="mainContainer">
+        <div id="main">
+            <div id="imageContainer">
+                <div id="warning">
+                    <p id="warningHeader">Warning:</p>
+                    <p>Viewing this image can cause severe emotional and pyschological damage.</p>
+                    <p>By proceding, you acknowledge and understand the risks associated.</p>
+                    <p>By clicking below, you recognize this risk on your own fruition and accept all consequences involved.</p>
+                    <div id="showPicButton">Click Here!</div>
+                </div>
+                <div id="myPicContainer">
+                    <img id="myPic" src="https://i.ibb.co/r5kkYqW/selfie.png" />
+                    <div id="hideIt">Hide It!</div>
+                </div>
+            </div>
+            <div id="aboutMe">
+                <div id="aboutMeButtonsContainer">
+                    <div id="previous" class="aboutMeButton">Previous</div>
+                    <div id="next" class="aboutMeButton">Next</div>
+                </div>
+                <div id="myInfo">
+                    <div class="category" id="mission">
+                        <p id="missionTitle">My Mission:</p>
+                        <p id="missionStatement">As a Junior Web Developer with a strong background in customer service, my mission is to blend technical expertise with exceptional customer interaction to create and maintain high-quality web solutions. My interest in this role stems from my passion for technology and my desire to use it to improve user experiences. I am committed to continuous learning and staying updated with the latest industry trends. I aim to leverage my problem-solving skills and customer service experience to understand client needs better, provide tailored solutions, and contribute positively to the team. My ultimate goal is to grow within the organization while helping it achieve its objectives through my dedication, hard work, and innovative approach.</p>
+                    </div>
+                    <div class="category" id="education">
+                        <div id="educationMain">
+                            <div id="educationInfo">
+                                <div class="educationButtonContainer">
+                                    <div id="creditsButton" class="educationButton">College Credits</div>
+                                </div>
+                                <div>
+                                    <p class="educationTitle">Education:</p>
+                                    <p>Capella University - Online</p>
+                                    <p>GPA: 4.0</p>
+                                    <p>Expected Graduation Date: Fall 2027</p>
+                                    <p>Bachelor's of Computer Science with a focus on Software and Web Development</p>
+                                </div>
+                            </div>
+                            <div id="credits">
+                                <div class="educationButtonContainer">
+                                    <div id="educationMainButton" class="educationButton">Education</div>
+                                </div>
+                                <div>
+                                    <p class="educationTitle">Current College Credits:</p>
+                                    <p>IT1006 - Introduction to IT Concepts: 6 credit Hours</p>
+                                    <p>IT2230 - Introduction to Database Systems: 6 Credit Hours</p>
+                                    <p>COM1150 - Communication Strategies for the Information Technology Professional: 6 Credit Hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category" id="skills">
+                        <div id="skillsContainer">
+                            <div>
+                                <p>Skills:</p>
+                                <ul>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>Javascript</li>
+                                    <li>jQuery</li>
+                                    <li>node.js</li>
+                                    <li>MySQL</li>
+                                    <li>MariaDB</li>
+                                    <li>MongoDB</li>
+                                    <li>Python</li>
+                                    <li>Pygame</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="projectsContainer">
+                <p id="projectTitle" ></p>
+                <p id="projectSubtitle">Click a project to learn more!</p>
+                <div id="carousel">
+                    <div id="thumbsContainer">
+                        <p id="projectLeft" class="projectSwitcher"><</p>
+                        <img id="thumb" src="" alt="" />
+                        <p id="projectRight" class="projectSwitcher">></p>
+                    </div>
+                </div>
+                <div id="tooltip">
+                    <div id="infoContainer">
+                        <div id="thumbnailDescription">
+                            <p id="projectText">Project Text Here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="node_script.js"></script>
+</body>
+</html>
