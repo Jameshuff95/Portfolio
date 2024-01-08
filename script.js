@@ -352,55 +352,67 @@ let projectLeft = document.getElementById('projectLeft');
 let projectRight = document.getElementById('projectRight');
 let projectTitle = document.getElementById('projectTitle');
 let projectText = document.getElementById('projectText');
+let thumbLink = document.getElementById('thumbLink');
+// let link = thumbLink.href; // new code here
+// let alt = image.alt; // new code here
+
 let projectList = [
     {
         title: 'Quiz Game',
-        image: 'https://i.ibb.co/4YDXQNN/Quiz.png',
-        text: 'Built using HTML, CSS, and Javascript. This project helped me learn more about using eventListeners for answer verification. I plan to make this into a CRUD application in the future.'
+        image: 'https://i.ibb.co/FVg8JMV/Quiz.png',
+        text: 'Built using HTML, CSS, and Javascript. This project helped me learn more about using eventListeners for answer verification. I plan to make this into a CRUD application in the future.',
+        href: 'https://github.com/Jameshuff95/Quiz-Game/blob/main/index.html',  // new code here
+        alt: 'Quiz Game'  // new code here
     },
     {
         title: 'Pong Game',
-        image: 'https://i.ibb.co/8ccZfMn/Pong.png',
-        text: 'Built with HMTL, CSS and Javascript. This project taught me how to utilize offset to contain the ball within the screen-area.'
+        image: 'https://i.ibb.co/9t4tG0f/Pong.png',
+        text: 'Built with HMTL, CSS and Javascript. This project taught me how to utilize offset to contain the ball within the screen-area.',
+        href: 'https://github.com/Jameshuff95/PONG',  // new code here
+        alt: 'Pong Game'  // new code here
     },
     {
         title: 'Match Game',
-        image: 'https://i.ibb.co/jbC9kzr/Match-Game.png',
-        text: 'Built with HTML, CSS and Javascript. This project taught me how to use verification of multiple selected elements to determine like elements.'
+        image: 'https://i.ibb.co/PtQypB4/Match-Game.png',
+        text: 'Built with HTML, CSS and Javascript. This project taught me how to use verification of multiple selected elements to determine like elements.',
+        href: 'https://github.com/Jameshuff95/Match-Game',  // new code here
+        alt: 'Match Game'  // new code here
     },
     {
         title: 'Retro Snake',
         image: 'https://i.ibb.co/ZgGvCys/Snake.png',
-        text: 'Built with Python using Pygame. It is designed to look more "retro" and add a sense of nastalgia for those who grew up playing snake on their phones! This was my first Pygame project and I learned how to better oraganize my code in the definitions - game loop format and making organized, multi-file applications.'
+        text: 'Built with Python using Pygame. It is designed to look more "retro" and add a sense of nastalgia for those who grew up playing snake on their phones! This was my first Pygame project and I learned how to better oraganize my code in the definitions - game loop format and making organized, multi-file applications.',
+        href: 'https://github.com/Jameshuff95/retro_snake_game',  // new code here
+        alt: 'Snake Game'  // new code here
     },
     {
         title: 'Tetris',
         image: 'https://i.ibb.co/xjTWzc4/Tetris.png',
-        text: 'This is a simplified version of Tetris built with Pygame. This project helped me reinforce my understanding of Python and Pygame logic including efficient code organization. The player uses the up, down, left and right arrow keys to control the falling block.'
+        text: 'This is a simplified version of Tetris built with Pygame. This project helped me reinforce my understanding of Python and Pygame logic including efficient code organization. The player uses the up, down, left and right arrow keys to control the falling block.',
+        href: 'https://github.com/Jameshuff95/simplified_tetris',  // new code here
+        alt: 'Tetris Game'  // new code here
     },
     {
         title: 'America Unfiltered',
-        image: 'https://i.ibb.co/CmHddK6/America-Unfiltered.png',
-        text: 'Built using HTML, CSS, Javascript. This project helped me practice using typography to control the flow of the content.'
+        image: 'https://i.ibb.co/fS7pC4s/America-Unfiltered.png',
+        text: 'Built using HTML, CSS, Javascript. This project helped me practice using typography to control the flow of the content.',
+        href: 'https://github.com/Jameshuff95/Political-Site', // new code here
+        alt: 'Political Website' // new code here
     }
 ];
-
-/*
-
-<a href="https://ibb.co/8ccZfMn"><img src="https://i.ibb.co/8ccZfMn/Pong.png" alt="Pong" border="0"></a> 
-<a href="https://ibb.co/CmHddK6"><img src="https://i.ibb.co/CmHddK6/America-Unfiltered.png" alt="America-Unfiltered" border="0"></a> 
-<a href="https://ibb.co/jbC9kzr"><img src="https://i.ibb.co/jbC9kzr/Match-Game.png" alt="Match-Game" border="0"></a> 
-<a href="https://ibb.co/4YDXQNN"><img src="https://i.ibb.co/4YDXQNN/Quiz.png" alt="Quiz" border="0"></a>
-
-*/
 
 let projectIndex = 0;
 
 image.src = projectList[projectIndex].image;
 projectTitle.textContent = projectList[projectIndex].title;
 projectText.textContent = projectList[projectIndex].text;
+thumbLink.href = projectList[projectIndex].href;
+thumbLink.alt = projectList[projectIndex].alt;
+//link = projectList[projectIndex].href // new code here
+//alt = projectList[projectIndex].alt // new code here
 
 function changeImage() {
+
     projectLeft.addEventListener("click", () => {
           if (projectIndex >= 0) {
             projectIndex--;
@@ -410,6 +422,8 @@ function changeImage() {
             image.src = projectList[projectIndex].image;
             projectTitle.textContent = projectList[projectIndex].title;
             projectText.textContent = projectList[projectIndex].text;
+            thumbLink.href = projectList[projectIndex].href;
+            thumbLink.alt = projectList[projectIndex].alt;
             projectLeft.style.backgroundColor = 'dimgrey';
             projectLeft.style.transform = 'scale(.9)';
             projectLeft.style.color = 'whitesmoke';
@@ -420,7 +434,6 @@ function changeImage() {
                 projectLeft.style.color = 'black';
                 projectLeft.style.pointerEvents = 'auto';
             }, 175);
-
           }
     });
 
@@ -433,6 +446,8 @@ function changeImage() {
             image.src = projectList[projectIndex].image;
             projectTitle.textContent = projectList[projectIndex].title;
             projectText.textContent = projectList[projectIndex].text;
+            thumbLink.href = projectList[projectIndex].href;
+            thumbLink.alt = projectList[projectIndex].alt;
             projectRight.style.backgroundColor = 'dimgrey';
             projectRight.style.transform = 'scale(.9)';
             projectRight.style.color = 'whitesmoke';
