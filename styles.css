@@ -539,6 +539,7 @@ header {
 }
 
 #thumb {
+    border: 1px solid white;
     border-radius: 10px;
     height: 40vh;
     width: 40vh;
