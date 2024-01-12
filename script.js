@@ -1,9 +1,4 @@
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////
-
-// Header Type Function
-///////////////////////////////////////////////////////////////////////////////////////////////
+//Header Type Function/////////////////////////////////////////////////////////////////////////////////////////////
 
 let changer = document.querySelector("#wordChanger")
 let strings = ["Student", "Designer", "Developer"];
@@ -63,8 +58,8 @@ timerId = setInterval(typeOrDeleteLetter, 100); // set initial interval with sho
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-// Menu Button
-///////////////////////////////////////////////////////////////////////////////////////////////
+
+//Menu Button/////////////////////////////////////////////////////////////////////////////////////////////
 
 let menu = document.querySelector('#menu');
 menu.style.visibility = 'hidden';
@@ -83,8 +78,8 @@ closeMenu.addEventListener("click", () => {
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-// Theme Button
-//////////////////////////////////////////////////////////////////////////////////////////////
+
+//Theme Button////////////////////////////////////////////////////////////////////////////////////////////
 
 let body = document.querySelector('body');
 let outerSwitch = document.querySelector('outerSwitch');
@@ -133,7 +128,7 @@ modeSwitch.addEventListener("click", () => {
         main.style.boxShadow = 'inset 0 0 2rem yellow';
         main.style.color = 'black';
         mainContainer.style.background = 'linear-gradient(45deg, darkgreen, yellow, darkgreen, lime, darkgreen, yellow, darkgreen, lime, darkgreen, yellow, darkgreen, lime, yellow, darkgreen, yellow, darkgreen, lime, darkgreen, yellow)';
-
+        main.style.border = '.25rem solid yellow';
         menuButton.style.color = 'black';
         menuButton.style.border = '1px solid black';
         menuButton.style.backgroundColor = 'whitesmoke';
@@ -174,6 +169,7 @@ modeSwitch.addEventListener("click", () => {
         main.style.backgroundColor = 'black';
         main.style.color = 'white';
         main.style.boxShadow = 'inset 0 0 1rem white';
+        main.style.border = '.25rem solid blue';
 
         mainContainer.style.background = 'linear-gradient(45deg, black, blue, black, navy, black, blue, black, navy, black, blue, black, navy, black, blue, black, navy, black, blue)';
 
@@ -229,19 +225,22 @@ modeSwitch.addEventListener("click", () => {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-// Show Picture
-///////////////////////////////////////////////////////////////////////////////////////////////
+
+//Show Picture/////////////////////////////////////////////////////////////////////////////////////////////
 
 let warning = document.getElementById('warning');
+let warningContainer = document.getElementById('warningContainer')
 let myPic = document.getElementById('myPicContainer');
 let myPicBackground = document.getElementById('myPicBackground');
 let selfie = document.getElementById('myPic');
 
 myPic.style.display = 'none';
+warningContainer.style.display = 'flex';
 
 let showFace = document.querySelector('#showPicButton');
 showFace.addEventListener("click", () => {
     warning.style.display = 'none';
+    warningContainer.style.display = 'none';
     myPic.style.display = 'flex';
     selfie.style.boxShadow = '0 0 2rem yellow';
 });
@@ -249,13 +248,14 @@ showFace.addEventListener("click", () => {
 let hideIt = document.querySelector('#hideIt');
 hideIt.addEventListener("click", () => {
     warning.style.display = 'block';
+    warningContainer.style.display = 'block';
     myPic.style.display = 'none';
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-// Menu Options
-///////////////////////////////////////////////////////////////////////////////////////////////
+
+//Menu Options/////////////////////////////////////////////////////////////////////////////////////////////
 
 let aboutMe = document.getElementById('aboutMe');
 let projects = document.getElementById('projectsContainer');
@@ -264,11 +264,11 @@ let projectsLink = document.getElementById('projectsLink');
 let imageContainer = document.getElementById('imageContainer');
 
 aboutMeLink.addEventListener("click", () => {
-    aboutMe.style.display = 'grid'; 
+    aboutMe.style.display = 'flex'; 
     projects.style.display = 'none';
     menu.style.visibility = 'hidden';
     menu.style.animation = 'none';
-    imageContainer.style.display = 'block';
+    imageContainer.style.display = 'flex';
 });
 
 projectsLink.addEventListener("click", () => {
@@ -278,10 +278,11 @@ projectsLink.addEventListener("click", () => {
     menu.style.animation = 'none';
     imageContainer.style.display = 'none';
 });
+
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-//Section Switcher
-///////////////////////////////////////////////////////////////////////////////////////////////
+
+//Section Switcher/////////////////////////////////////////////////////////////////////////////////////////////
 
 let mission = document.getElementById('mission');
 let education = document.getElementById('education');
@@ -301,8 +302,6 @@ currentCategory.style.display = 'block'; // Show the first category
 let previous = document.getElementById('previous');
 let next = document.getElementById('next');
 
-
-// Add event listener for the 'previous' button
 previous.addEventListener("click", () => {
     currentCategory.style.display = 'none'; // Hide the current category
     categoryIndex--;
@@ -311,9 +310,8 @@ previous.addEventListener("click", () => {
         }
     currentCategory = categories[categoryIndex];
     currentCategory.style.display = 'block'; // Show the new current category
-});
+}); // Add event listener for the 'previous' button
 
-// Add event listener for the 'next' button
 next.addEventListener("click", () => {
     currentCategory.style.display = 'none'; // Hide the current category
     categoryIndex++;
@@ -322,7 +320,7 @@ next.addEventListener("click", () => {
         }
     currentCategory = categories[categoryIndex];
     currentCategory.style.display = 'block'; // Show the new current category
-});
+}); // Add event listener for the 'next' button
 
 let educationInfo = document.getElementById('educationInfo');
 let credits = document.getElementById('credits');
@@ -344,8 +342,8 @@ educationButton.addEventListener('click', function() {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Projects
-//////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Projects///////////////////////////////////////////////////////////////////////////////////////////////
 
 let image = document.getElementById('thumb');
 let projectLeft = document.getElementById('projectLeft');
@@ -353,8 +351,6 @@ let projectRight = document.getElementById('projectRight');
 let projectTitle = document.getElementById('projectTitle');
 let projectText = document.getElementById('projectText');
 let thumbLink = document.getElementById('thumbLink');
-// let link = thumbLink.href; // new code here
-// let alt = image.alt; // new code here
 
 let projectList = [
     {
@@ -408,8 +404,6 @@ projectTitle.textContent = projectList[projectIndex].title;
 projectText.textContent = projectList[projectIndex].text;
 thumbLink.href = projectList[projectIndex].href;
 thumbLink.alt = projectList[projectIndex].alt;
-//link = projectList[projectIndex].href // new code here
-//alt = projectList[projectIndex].alt // new code here
 
 function changeImage() {
 
@@ -465,4 +459,3 @@ function changeImage() {
 changeImage();
 
 //////////////////////////////////////////////////////////////////////////
-

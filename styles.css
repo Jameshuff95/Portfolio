@@ -1,10 +1,13 @@
 ﻿body {
-    height: 100vh;
     box-sizing: border-box;
     font-size: 2rem;
-    overflow: hidden;
     background: linear-gradient(22deg, lightgreen, grey, darkgreen);
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    overflow-x: hidden;
 }
+
 
 /*Header*/
 /*******************************************************************************************/
@@ -12,8 +15,12 @@
 header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0;
+    padding: 1%;
     color: white;
+    justify-content: space-evenly;
+    height: 5rem;
+    padding: 0;
+    align-content: center;
 }
 
 #leftHeader {
@@ -90,6 +97,9 @@ header {
 /*******************************************************************************************/
 /*End Header*/
 
+
+
+
 /*Menu*/
 /*******************************************************************************************/
 
@@ -97,12 +107,15 @@ header {
     padding: 0;
     display: grid;
     cursor: pointer;
+    place-items: center;
+    font-size: 2rem;
     border: 1px solid whitesmoke;
     background-color: whitesmoke;
     color: black;
     padding: .5rem;
     border-radius: 10px;
     box-shadow: inset 0 0 .5rem black;
+    width: 2rem;
 }
 
 #menu {
@@ -121,16 +134,6 @@ header {
     justify-content: flex-end;
     z-index: 10;
 }
-
-    @keyframes menuIn {
-        0% {
-            transform: translate(50%, 0);
-        }
-        100% {
-            transform: translate(0, 0);
-        }
-    }
-
 
 #closeMenu {
     border: 1px solid black;
@@ -169,8 +172,8 @@ header {
     place-items: center;
     cursor: pointer;
     width: 70%;
-    height: 3rem;
     text-align: center;
+    padding: 3%;
 }
 
 .menuItem:hover {
@@ -185,49 +188,59 @@ header {
 /*******************************************************************************************/
 
 
+
 /*Main Container*/
 /*******************************************************************************************/
 
 #mainContainer {
     background: linear-gradient(45deg, darkgreen, yellow, darkgreen, lime, darkgreen, yellow, darkgreen, lime, darkgreen, yellow, darkgreen, lime, yellow, darkgreen, yellow, darkgreen, lime, darkgreen, yellow);
-    height: 82vh;
     border-radius: 20px;
     border: 1px solid whitesmoke;
     box-shadow: 0 0 2rem black;
-    overflow-y: scroll;
-    padding: 1%;
+    padding: 3%;
+    margin: 1rem .5rem;
 }
 
 #main {
-    width: 95%;
+    width: 90%;
     background-color: green;
     border-radius: 20px;
-    border: 1px solid black;
     border-radius: 20px;
     box-shadow: inset 0 0 2rem yellow;
-    margin: 1rem auto;
-    padding: 5% 0;
-    height: 99vh;
+    margin: auto;
+    border: .25rem solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5%;
 }
 
 /* Image */
 /*****************************************************************************************************************/
 
+#test {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
 #imageContainer {
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
     color: white;
     text-align: center;
     background-color: black;
     border-radius: 20px;
     box-shadow: inset 0 0 3rem red;
-    border: 1px solid white;
-    width: 70%;
-    height: 35vh;
+    width: 50%;
+    height: 15rem;
     margin: 1rem auto;
-    font-size: .75rem;
-    padding: 2rem;
-    bordeR: 1px solid yellow;
+    border: 1px solid yellow;
 }
 
 #imageContainer p:first-of-type {
@@ -235,8 +248,18 @@ header {
     font-size: 2rem;
 }
 
+#warningContainer {
+    display: flex;
+    flex-direction: column;
+}
+
 #warningHeader {
     color: red;
+    margin: 0;
+}
+
+#warning {
+    font-size: .75rem;
 }
 
 #showPicButton {
@@ -261,20 +284,19 @@ header {
 #myPicContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+    margin: auto;
     height: 100%;
-    width: 100%;
 }
 
 #myPic {
     box-shadow: 0 0 1rem black;
-    height: 12.5rem;
-    width: 80%;
-    margin: 0 auto;
     border-radius: 10%;
     border: .5rem double blue;
-    object-fit: cover;
-    padding: 2%;
+    width: 25vh;
+    margin: auto;
 }
 
 #hideIt {
@@ -282,10 +304,11 @@ header {
     border: 1px solid white;
     box-shadow: inset 0 0 1rem black;
     border-radius: 10px;
-    margin: .75rem auto;
+    margin: auto;
     padding: 2%;
     cursor: pointer;
     font-size: 1rem;
+    width: 50%;
 }
 
 #hideIt p {
@@ -311,29 +334,24 @@ header {
 /*********************************************************************************************/
 
 #aboutMe {
-    width: 95%;
-    padding: 2%;
     display: flex;
     flex-direction: column;
-    height: 18.5rem;
-}
-
-#myInfo {
-    padding: 2%;
-    margin: auto;
+    justify-content: space-between;
+    padding: 0;
+    height: 100%;
 }
 
 #aboutMeButtonsContainer {
     display: flex;
     justify-content: space-around;
+    height: 2.5rem;
+    width: 95%;
     margin: auto;
-    width: 100%;
-    height: 1.5rem;
 }
 
 .aboutMeButton {
     display: grid;
-    width: 30%;
+    width: 45%;
     height: 100%;
     place-items: center;
     border-radius: 10px;
@@ -347,31 +365,35 @@ header {
 }
 
 .aboutMeButton:hover {
-    transform: scale(.9);
+    transform: scale(.95);
     box-shadow: inset 0 0 1rem black;
+    color: white;
+    background-color: dimgrey;
 }
 
-/*Categories*/
-/****************************************************************************************************************/
-
-#mission, #education, #skills {
-    font-size: 1rem;
-    font-size: .95rem;
+#myInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 0;
 }
 
 #missionTitle {
-    padding: 0;
     margin: 0;
-    font-size: 1.5rem;
     font-weight: 900;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 #missionStatement {
-    margin:  auto;
     text-align: center;
+    margin: 0;
     padding: 2%;
+    font-size: .925rem;
+    height: 100%;
 }
+
 
 
 /* Education */
@@ -380,28 +402,32 @@ header {
 #educationMain {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    height: 100%;
     justify-content: space-between;
+    font-size: 1rem;
+    padding: 5%;
+    height: 10rem;
 }
 
 .educationTitle {
     font-weight: 900;
+    margin: 0;
 }
 
-#education p {
-    margin: .5rem;
+#educationInfo {
+    margin: auto;
+    padding: 2%;
+    font-size: .9rem;
+    padding: 0;
 }
-
 .educationButtonContainer {
-    display: grid;
-    place-items: end;
-    padding: 4%;
+    display: flex;
+    justify-content: end;
 }
 
 .educationButton {
-    width: 35%;
+    width: 30%;
     display: grid;
+    font-size: 1rem;
     place-items: center;
     border-radius: 10px;
     background-color: whitesmoke;
@@ -416,34 +442,45 @@ header {
     transform: scale(.9);
     background-color: dimgrey;
     color: white;
-    border: 1px solid white;
 }
 
 /***********************************************************************************************/
 
+
 /*Skills*/
 /***********************************************************************************************/
 
+#skills {
+    height: 100%;
+}
+
 #skillsContainer {
     display: flex;
-    justify-content: space-evenly;
-    align-items: space-between;
-    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     height: 100%;
+    margin: auto;
     font-size: 1rem;
 }
 
 #skillsContainer p:first-of-type {
     margin: .5rem 0;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+}
+
+#skillsContainer div {
+    width: 100%;
+    height: 100%;
 }
 
 #skillsContainer ul {
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 90%;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -453,6 +490,12 @@ header {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    cursor: pointer;
+}
+
+#skillsContainer li:hover {
+    transform: scale(1.1);
+    color: yellow;
 }
 
 #skillsContainer p {
@@ -461,6 +504,10 @@ header {
 }
 
 /****************************************************************************************/
+
+
+
+
 /*Projects*/
 /****************************************************************************************/
 
@@ -493,8 +540,8 @@ header {
 
 #thumb {
     border-radius: 10px;
-    height: 30vh;
-    width: 30vh;
+    height: 40vh;
+    width: 40vh;
     margin: 2%;
 }
 
@@ -541,4 +588,85 @@ header {
     margin: 0;
     height: 100%;
     padding: 5%;
+}
+
+
+/*Keyframes*/
+
+@keyframes menuIn {
+    0% {
+        transform: translate(50%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/**/
+
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 400px) {
+    
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+
+
+@media screen and (min-width: 769px) {
+
+    #name {
+        font-size: 2.5rem;
+    }
+
+    #wordChanger {
+        font-size: 1.5rem;
+    }
+
+    #menuButton {
+        width: 4rem;
+    }
+
+    #menu {
+        height: 80%;
+        font-size: 2rem;
+    }
+
+    #closeMenu {
+        height: 5%;
+        width: 10%;
+        padding: 3%;
+        font-size: 1.5rem;
+    }
+
+    #missionStatement {
+        font-size: 1.15rem;
+    }
+/*
+    #imageContainer {
+        height: 55%;
+        width: 75%;
+        padding: 0;
+        margin: 1rem auto;
+        bordeR: 1px solid white;
+    }
+
+    #myPic {
+        margin: 0 auto;
+        padding: 0;
+        height: 60%;
+        width: 60%;
+    }
+
+    #imageContainer {
+        border: 1px solid red;
+        width: 50%;
+        padding: 5%;
+    }
+*/
 }
