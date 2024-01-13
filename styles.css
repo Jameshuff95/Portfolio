@@ -212,7 +212,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5%;
+    padding: 3%;
 }
 
 /* Image */
@@ -223,7 +223,7 @@ header {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 100%;
 }
 
@@ -231,16 +231,16 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5%;
     color: white;
     text-align: center;
     background-color: black;
     border-radius: 20px;
     box-shadow: inset 0 0 3rem red;
-    width: 50%;
-    height: 15rem;
+    height: 25rem;
+    width: 75%;
     margin: 1rem auto;
     border: 1px solid yellow;
+    padding: 3%;
 }
 
 #imageContainer p:first-of-type {
@@ -259,12 +259,13 @@ header {
 }
 
 #warning {
-    font-size: .75rem;
+    font-size: 1rem;
 }
 
 #showPicButton {
     background-color: whitesmoke;
-    width: 50%;
+    width: 90%;
+    height: 10%;
     margin: 1rem auto;
     color: black;
     border: 1px solid black;
@@ -272,6 +273,8 @@ header {
     border-radius: 10px;
     font-size: 1rem;
     padding: 1%;
+    display: grid;
+    place-items: center;
 }
 
 #showPicButton:hover {
@@ -284,19 +287,19 @@ header {
 #myPicContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    place-items: center;
-    margin: auto;
+    justify-content: space-evenly;
+    padding: 5%;
     height: 100%;
+    width: 90%;
 }
 
 #myPic {
     box-shadow: 0 0 1rem black;
     border-radius: 10%;
     border: .5rem double blue;
-    width: 25vh;
-    margin: auto;
+    width: 40vw;
+    max-width: 250px;
+    margin: 1.5rem auto;
 }
 
 #hideIt {
@@ -308,7 +311,18 @@ header {
     padding: 2%;
     cursor: pointer;
     font-size: 1rem;
-    width: 50%;
+    width: 75%;
+    height: 10%;
+    display: grid;
+    place-items: center;
+}
+
+#hideIt:hover {
+    transform: scale(1.1);
+    color: yellow;
+    border: 1px solid yellow;
+    font-weight: 900;
+    font-size: 1.1rem;
 }
 
 #hideIt p {
@@ -317,13 +331,6 @@ header {
     place-items: center;
     border-radius: 10px;
     font-size: 1rem;
-    border: 1px solid white;
-}
-
-#hideIt:hover {
-    transform: scale(1.2);
-    color: white;
-    background-color: red;
     border: 1px solid white;
 }
 
@@ -344,15 +351,14 @@ header {
 #aboutMeButtonsContainer {
     display: flex;
     justify-content: space-around;
-    height: 2.5rem;
     width: 95%;
     margin: auto;
 }
 
 .aboutMeButton {
     display: grid;
-    width: 45%;
-    height: 100%;
+    width: 25vw;
+    padding: 3%;
     place-items: center;
     border-radius: 10px;
     box-shadow: inset 0 0 .65rem black;
@@ -389,9 +395,12 @@ header {
 #missionStatement {
     text-align: center;
     margin: 0;
-    padding: 2%;
-    font-size: .925rem;
-    height: 100%;
+    padding: 3%;
+    font-size: .8rem;
+    height: 75%;
+    color: black;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -402,10 +411,9 @@ header {
 #educationMain {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 1rem;
-    padding: 5%;
-    height: 10rem;
+    height: 13.5rem;
 }
 
 .educationTitle {
@@ -413,19 +421,23 @@ header {
     margin: 0;
 }
 
-#educationInfo {
-    margin: auto;
-    padding: 2%;
+#educationInfo, #credits {
     font-size: .9rem;
-    padding: 0;
+    height: 100%;
+    width: 95%;
+    margin: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+
 .educationButtonContainer {
     display: flex;
     justify-content: end;
 }
 
 .educationButton {
-    width: 30%;
+    width: 45%;
     display: grid;
     font-size: 1rem;
     place-items: center;
@@ -442,6 +454,14 @@ header {
     transform: scale(.9);
     background-color: dimgrey;
     color: white;
+}
+
+#test3 {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid white;
 }
 
 /***********************************************************************************************/
@@ -574,14 +594,14 @@ header {
 #tooltip {
     width: 90%;
     height: 25vh;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: lime;
     box-shadow: inset 0 0 1rem black;
     border-radius: 20px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: left;
 }
 
