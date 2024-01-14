@@ -399,8 +399,8 @@ header {
 #missionStatement {
     text-align: center;
     margin: 1rem 0;
-    font-size: 46%;
-    height: 60%;
+    font-size: 65%;
+    height: 70%;
     color: black;
     display: flex;
     align-items: center;
@@ -628,15 +628,10 @@ header {
 /**/
 
 
+/*
+//Media Queries////////////////////////////////////////////////////////
 
-/*Media Queries*/
-
-@media screen and (max-width: 400px) {
-    
-}
-
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 300px) {
 
 }
 
@@ -670,26 +665,5 @@ header {
     #missionStatement {
         font-size: 1.15rem;
     }
-/*
-    #imageContainer {
-        height: 55%;
-        width: 75%;
-        padding: 0;
-        margin: 1rem auto;
-        bordeR: 1px solid white;
-    }
-
-    #myPic {
-        margin: 0 auto;
-        padding: 0;
-        height: 60%;
-        width: 60%;
-    }
-
-    #imageContainer {
-        border: 1px solid red;
-        width: 50%;
-        padding: 5%;
-    }
-*/
 }
+*/
