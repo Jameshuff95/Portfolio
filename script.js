@@ -96,6 +96,8 @@ let educationButtons = document.querySelectorAll('.educationButton');
 let projectSwitcher = document.getElementById('projectSwitcher');
 let projectSwitchers = document.querySelectorAll('.projectswitcher');
 let downloadLink = document.getElementById('downloadResume');
+let missionStatement =  document.getElementById('missionStatement');
+
 tooltip.style.backgroundColor = 'whitesmoke';
 
 educationButtons.forEach((educationButton) => {
@@ -104,7 +106,6 @@ educationButtons.forEach((educationButton) => {
 
 menuItems.forEach((menuItem) => {
 menuItem.style.borderRadius = '25px';
-// menuItem.style.boxShadow = 'inset 0 0 .5rem transparent';
 });
 
 modeSwitch.addEventListener("click", () => {
@@ -215,6 +216,8 @@ modeSwitch.addEventListener("click", () => {
             button.style.border = '1px solid whitesmoke';
         });
 
+        missionStatement.style.color = 'white';
+        
         educationButtons.forEach((educationButton) => {
             educationButton.color = 'black';
         });
