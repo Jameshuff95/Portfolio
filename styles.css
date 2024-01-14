@@ -399,7 +399,7 @@ header {
 #missionStatement {
     text-align: center;
     margin: 1rem 0;
-    font-size: 65%;
+    font-size: 50%;
     height: 70%;
     color: black;
     display: flex;
@@ -628,14 +628,6 @@ header {
 /**/
 
 
-/*
-//Media Queries////////////////////////////////////////////////////////
-
-@media screen and (max-width: 300px) {
-
-}
-
-
 @media screen and (min-width: 769px) {
 
     #name {
@@ -663,7 +655,10 @@ header {
     }
 
     #missionStatement {
-        font-size: 1.15rem;
+        font-size: 2rem;
+    }
+
+    #educationInfo, #credits {
+        font-size: 1.2rem;
     }
 }
-*/
