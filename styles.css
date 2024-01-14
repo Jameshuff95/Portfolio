@@ -565,7 +565,7 @@ header {
     border-radius: 10px;
     height: 30vh;
     width: 30vh;
-    margin: auto 1rem;
+    margin: auto .5rem;
 }
 
 #thumb:hover {
