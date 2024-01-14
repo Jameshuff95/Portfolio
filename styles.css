@@ -411,6 +411,9 @@ header {
 /* Education */
 /*////////////////////////////////////////////////////////////////////////////*/
 
+#education {
+    bordeR: 1px solid red;
+}
 #educationMain {
     display: flex;
     flex-direction: column;
