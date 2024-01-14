@@ -161,6 +161,8 @@ modeSwitch.addEventListener("click", () => {
         
         downloadLink.style.color = 'black';
 
+        missionStatement.style.color = 'black';
+
         tooltip.style.backgroundColor = 'white';
         
     } else {
@@ -217,7 +219,7 @@ modeSwitch.addEventListener("click", () => {
         });
 
         missionStatement.style.color = 'white';
-        
+
         educationButtons.forEach((educationButton) => {
             educationButton.color = 'black';
         });
@@ -380,7 +382,7 @@ let projectList = [
     {
         title: 'Retro Snake',
         image: 'https://i.ibb.co/ZgGvCys/Snake.png',
-        text: 'Built with Python using Pygame. It is designed to look more "retro" and add a sense of nastalgia for those who grew up playing snake on their phones! This was my first Pygame project and I learned how to better oraganize my code in the definitions - game loop format and making organized, multi-file applications.',
+        text: 'Built with Python using Pygame. It is designed to look more "retro" with an added a sense of nastalgia. I learned how to better oraganize my code in the definitions - game loop format and making organized, multi-file applications.',
         href: 'https://github.com/Jameshuff95/retro_snake_game',  // new code here
         alt: 'Snake Game'  // new code here
     },
